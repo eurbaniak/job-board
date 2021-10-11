@@ -1,0 +1,13 @@
+@use "./utils.scss";
+
+$variables: (
+  primary: #367bff,
+  primary-light: #2f9ffb,
+  dark: #1c1711,
+  secondary: #dfdfdf,
+  light: #f8f8ff,
+);
+
+@function get($keys...) {
+  @return utils.map-get-deep($variables, $keys...);
+}
