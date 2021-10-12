@@ -3,9 +3,13 @@
 $variables: (
   primary: #367bff,
   primary-light: #2f9ffb,
+  primary-dark: #678693,
   dark: #1c1711,
-  secondary: #dfdfdf,
+  secondary: #b8bac0,
+  secondary-light: #e6e6e6,
   light: #f8f8ff,
+  light-green: #d9fee0,
+  light-orange: #fee8d6,
 );
 
 @function get($keys...) {

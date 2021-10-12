@@ -10,6 +10,7 @@ import { onError } from "@apollo/client/link/error";
 import Header from "./components/header/index.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SearchBanner from "./components/search_banner/index";
+import Jobs from "components/jobs";
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors)
@@ -40,7 +41,7 @@ const App = () => {
         <Header />
         <SearchBanner />
         <Switch>
-          <Route path="/" />
+          <Route path="/jobs" component={Jobs} />
           <Route path="/" />
           <Route path="/" />
         </Switch>
